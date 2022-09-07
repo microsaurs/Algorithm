@@ -13,6 +13,7 @@ def check(x):
     for i in range(x):
         if visited[x] == visited[i] or abs(visited[x] - visited[i]) == x - i:
             return False
+    return True
 
 def queen(x,n):
     global count #전역변수 설정
@@ -20,7 +21,7 @@ def queen(x,n):
         count += 1 # 값 증가
     else:
         for i in range(n):
-            visited[x] = i
+            visited[x] = i #열
             if check(x):
                 queen(x + 1, n)
 
