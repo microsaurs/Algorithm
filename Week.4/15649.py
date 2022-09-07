@@ -9,6 +9,8 @@
 # pop 함수 = 리스트 내부 요소를 꺼내주는 함수
 # 리스트에서 요소를 꺼내면서 그 요소는 리스트 안에서 지워짐
 
+# itertools permutation 사용해서 푸는 방법도 있음.
+
 
 N,M = list(map(int,input().split()))
 
@@ -26,3 +28,5 @@ def sequence():
             s.pop()
 
 sequence()
+
+
